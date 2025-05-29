@@ -57,6 +57,139 @@ h2 {
     color: #2e7d32;
 }
 
+h3 {
+    color: #2e7d32;
+    margin-top: 30px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.reading-time {
+    font-size: 1em;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+
+/* Content Sections */
+.intro-section {
+    margin: 40px 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.intro-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Influencers Grid */
+.influencers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.influencer-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.influencer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.influencer-card h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.influencer-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.conclusion p {
+    font-size: 1.2em;
+    color: #2e7d32;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .influencers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .influencer-card {
+        padding: 20px;
+    }
+    
+    .conclusion {
+        padding: 30px 20px;
+    }
+}
+
 footer {
     background-color: #2e7d32;
     color: white;
