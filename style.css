@@ -258,3 +258,106 @@ footer {
 .botao-enviar:hover {
     background-color: #1b5e20;
 }
+
+.imagem-destaque {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagem-destaque img {
+    max-width: 700px; /* define uma largura máxima */
+    width: 100%; /* mantém responsividade */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.legenda-imagem {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.imagem-agenda {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagem-agenda img {
+    max-width: 700px; /* define uma largura máxima */
+    width: 100%; /* mantém responsividade */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.legenda-agenda {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  scroll-snap-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 100, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.galeria-titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #004d26; /* tom de verde escuro */
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.galeria-titulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #00a86b; /* linha decorativa */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
